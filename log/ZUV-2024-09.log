@@ -1,0 +1,174 @@
+2024-09-06 23:06:35.302 [main] INFO  c.wevioo.facturx.FacturxApplication - Starting FacturxApplication on LAPTOP-DDE with PID 24192 (started by dde in C:\Users\dde\OneDrive - WEVIOO\Desktop\facturx)
+2024-09-06 23:06:35.304 [main] INFO  c.wevioo.facturx.FacturxApplication - No active profile set, falling back to default profiles: default
+2024-09-06 23:06:36.016 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-06 23:06:36.040 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 JPA repository interfaces.
+2024-09-06 23:06:36.206 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-09-06 23:06:36.389 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-06 23:06:36.397 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-06 23:06:36.397 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-06 23:06:36.397 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2024-09-06 23:06:36.468 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-06 23:06:36.468 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1131 ms
+2024-09-06 23:06:36.501 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2024-09-06 23:06:36.503 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-09-06 23:06:36.509 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-09-06 23:06:36.512 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2024-09-06 23:07:53.166 [main] INFO  c.wevioo.facturx.FacturxApplication - Starting FacturxApplication on LAPTOP-DDE with PID 14224 (started by dde in C:\Users\dde\OneDrive - WEVIOO\Desktop\facturx)
+2024-09-06 23:07:53.167 [main] INFO  c.wevioo.facturx.FacturxApplication - No active profile set, falling back to default profiles: default
+2024-09-06 23:07:53.793 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-06 23:07:53.798 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-06 23:07:53.798 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-06 23:07:53.798 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2024-09-06 23:07:53.861 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-06 23:07:53.861 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 671 ms
+2024-09-06 23:07:54.010 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-09-06 23:07:54.232 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-09-06 23:07:54.241 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-09-06 23:07:54.256 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-09-06 23:07:54.266 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-06 23:07:54.284 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-06 23:07:54.286 [main] INFO  c.wevioo.facturx.FacturxApplication - Started FacturxApplication in 1.282 seconds (JVM running for 1.974)
+2024-09-06 23:09:28.584 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-06 23:09:28.586 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-06 23:09:28.594 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2024-09-06 23:26:15.952 [http-nio-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'file' is not present]
+2024-09-06 23:29:23.233 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'format' is not present]
+2024-09-06 23:29:47.136 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required int parameter 'version' is not present]
+2024-09-06 23:34:45.382 [main] INFO  c.wevioo.facturx.FacturxApplication - Starting FacturxApplication on LAPTOP-DDE with PID 13292 (started by dde in C:\Users\dde\OneDrive - WEVIOO\Desktop\facturx)
+2024-09-06 23:34:45.384 [main] INFO  c.wevioo.facturx.FacturxApplication - No active profile set, falling back to default profiles: default
+2024-09-06 23:34:46.126 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-06 23:34:46.131 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-06 23:34:46.131 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-06 23:34:46.131 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2024-09-06 23:34:46.185 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-06 23:34:46.185 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 777 ms
+2024-09-06 23:34:46.329 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-09-06 23:34:46.529 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-09-06 23:34:46.538 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-09-06 23:34:46.552 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-09-06 23:34:46.561 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-06 23:34:46.577 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-06 23:34:46.579 [main] INFO  c.wevioo.facturx.FacturxApplication - Started FacturxApplication in 1.361 seconds (JVM running for 2.07)
+2024-09-06 23:35:10.054 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-06 23:35:10.055 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-06 23:35:10.060 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2024-09-06 23:38:05.044 [http-nio-8080-exec-7] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /swagger
+2024-09-06 23:38:05.145 [http-nio-8080-exec-9] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
+2024-09-06 23:38:10.473 [http-nio-8080-exec-8] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /swagger-ui.html
+2024-09-06 23:38:25.563 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /swagger
+2024-09-06 23:38:25.626 [http-nio-8080-exec-1] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
+2024-09-06 23:38:34.346 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /swagger
+2024-09-06 23:38:47.211 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /swagger/swaager-ui.html
+2024-09-06 23:38:55.356 [http-nio-8080-exec-6] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /swagger/swagger-ui.html
+2024-09-06 23:42:30.100 [main] INFO  c.wevioo.facturx.FacturxApplication - Starting FacturxApplication on LAPTOP-DDE with PID 26028 (started by dde in C:\Users\dde\OneDrive - WEVIOO\Desktop\facturx)
+2024-09-06 23:42:30.102 [main] INFO  c.wevioo.facturx.FacturxApplication - No active profile set, falling back to default profiles: default
+2024-09-06 23:42:30.755 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-06 23:42:30.759 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-06 23:42:30.760 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-06 23:42:30.760 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2024-09-06 23:42:30.813 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-06 23:42:30.814 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 688 ms
+2024-09-06 23:42:30.969 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-09-06 23:42:31.205 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-09-06 23:42:31.214 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-09-06 23:42:31.229 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-09-06 23:42:31.237 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-06 23:42:31.252 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-06 23:42:31.254 [main] INFO  c.wevioo.facturx.FacturxApplication - Started FacturxApplication in 1.325 seconds (JVM running for 2.05)
+2024-09-06 23:42:37.900 [http-nio-8080-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-06 23:42:37.902 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-06 23:42:37.906 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-09-06 23:44:27.303 [main] INFO  c.wevioo.facturx.FacturxApplication - Starting FacturxApplication on LAPTOP-DDE with PID 26312 (started by dde in C:\Users\dde\OneDrive - WEVIOO\Desktop\facturx)
+2024-09-06 23:44:27.305 [main] INFO  c.wevioo.facturx.FacturxApplication - No active profile set, falling back to default profiles: default
+2024-09-06 23:44:27.953 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-06 23:44:27.958 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-06 23:44:27.958 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-06 23:44:27.958 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2024-09-06 23:44:28.011 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-06 23:44:28.011 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 683 ms
+2024-09-06 23:44:28.162 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-09-06 23:44:28.361 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-09-06 23:44:28.371 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-09-06 23:44:28.385 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-09-06 23:44:28.396 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-06 23:44:28.413 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-06 23:44:28.415 [main] INFO  c.wevioo.facturx.FacturxApplication - Started FacturxApplication in 1.269 seconds (JVM running for 1.977)
+2024-09-06 23:44:32.974 [http-nio-8080-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-06 23:44:32.976 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-06 23:44:32.980 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-09-06 23:45:45.148 [main] INFO  c.wevioo.facturx.FacturxApplication - Starting FacturxApplication on LAPTOP-DDE with PID 9944 (started by dde in C:\Users\dde\OneDrive - WEVIOO\Desktop\facturx)
+2024-09-06 23:45:45.150 [main] INFO  c.wevioo.facturx.FacturxApplication - No active profile set, falling back to default profiles: default
+2024-09-06 23:45:45.822 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-06 23:45:45.827 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-06 23:45:45.827 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-06 23:45:45.827 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2024-09-06 23:45:45.876 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-06 23:45:45.877 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 701 ms
+2024-09-06 23:45:46.015 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-09-06 23:45:46.220 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-09-06 23:45:46.229 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-09-06 23:45:46.242 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-09-06 23:45:46.252 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-06 23:45:46.266 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-06 23:45:46.268 [main] INFO  c.wevioo.facturx.FacturxApplication - Started FacturxApplication in 1.294 seconds (JVM running for 1.978)
+2024-09-06 23:45:52.496 [http-nio-8080-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-06 23:45:52.498 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-06 23:45:52.502 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-09-06 23:47:51.447 [main] INFO  c.wevioo.facturx.FacturxApplication - Starting FacturxApplication on LAPTOP-DDE with PID 14128 (started by dde in C:\Users\dde\OneDrive - WEVIOO\Desktop\facturx)
+2024-09-06 23:47:51.449 [main] INFO  c.wevioo.facturx.FacturxApplication - No active profile set, falling back to default profiles: default
+2024-09-06 23:47:52.112 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-06 23:47:52.116 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-06 23:47:52.117 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-06 23:47:52.117 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2024-09-06 23:47:52.169 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-06 23:47:52.169 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 694 ms
+2024-09-06 23:47:52.306 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-09-06 23:47:52.508 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-09-06 23:47:52.516 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-09-06 23:47:52.529 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-09-06 23:47:52.539 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-06 23:47:52.553 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-06 23:47:52.555 [main] INFO  c.wevioo.facturx.FacturxApplication - Started FacturxApplication in 1.275 seconds (JVM running for 1.987)
+2024-09-06 23:47:55.655 [http-nio-8080-exec-9] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-06 23:47:55.656 [http-nio-8080-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-06 23:47:55.660 [http-nio-8080-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-09-06 23:49:02.525 [main] INFO  c.wevioo.facturx.FacturxApplication - Starting FacturxApplication on LAPTOP-DDE with PID 9148 (started by dde in C:\Users\dde\OneDrive - WEVIOO\Desktop\facturx)
+2024-09-06 23:49:02.526 [main] INFO  c.wevioo.facturx.FacturxApplication - No active profile set, falling back to default profiles: default
+2024-09-06 23:49:03.181 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-06 23:49:03.189 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-06 23:49:03.189 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-06 23:49:03.189 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2024-09-06 23:49:03.251 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-06 23:49:03.251 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 700 ms
+2024-09-06 23:49:03.416 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-09-06 23:49:03.624 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2024-09-06 23:49:03.634 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-09-06 23:49:03.648 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2024-09-06 23:49:03.658 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-06 23:49:03.673 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-06 23:49:03.675 [main] INFO  c.wevioo.facturx.FacturxApplication - Started FacturxApplication in 1.315 seconds (JVM running for 2.03)
+2024-09-06 23:49:14.040 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-06 23:49:14.042 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-06 23:49:14.046 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-09-07 00:01:19.355 [http-nio-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "2.1"]
+2024-09-07 00:01:33.598 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: ""2.1""]
